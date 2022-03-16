@@ -1,0 +1,34 @@
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sbd:   <https://www.sbd4nano.eu/rdf/#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix void:  <http://rdfs.org/ns/void#> .
+
+<https://search.data.enanomapper.net/>
+ a                    void:DatasetDescription ;
+ dct:title            "Datasets hosted at search.data.enanomapper.net"@en ;
+ foaf:img             <https://search.data.enanomapper.net/assets/img/logo.png> ;
+ dct:license          <http://creativecommons.org/publicdomain/zero/1.0/> . # license of this metadata
+
+<https://search.data.enanomapper.net/projects/enanomapper/> a sbd:Dataset ;
+  dc:source <https://search.data.enanomapper.net/> ;
+  rdfs:label "FP7 eNanoMapper prototype database"@en ;
+  dc:description "Data from the FP7 eNanoMapper prototype database."@en ;
+  dct:license <https://search.data.enanomapper.net/about/enanomapper/> ;
+  foaf:page <https://search.data.enanomapper.net/projects/enanomapper/> .
+
+<https://search.data.enanomapper.net/projects/nanoreg/> a sbd:Dataset ;
+  dc:source <https://search.data.enanomapper.net/> ;
+  rdfs:label "FP7 NANoREG - eNanoMapper database"@en ;
+  dc:description "Data from the FP7 NANoREG - eNanoMapper database."@en ;
+  dct:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  foaf:page <https://search.data.enanomapper.net/projects/nanoreg/> .
+
+<https://search.data.enanomapper.net/projects/nanoreg2/> a sbd:Dataset ;
+  dc:source <https://search.data.enanomapper.net/> ;
+  rdfs:label "H2020 NanoReg2 - eNanoMapper database"@en ;
+  dc:description "Data from the H2020 NanoReg2 - eNanoMapper database."@en ;
+  dct:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+  foaf:page <https://search.data.enanomapper.net/projects/nanoreg2/> .
