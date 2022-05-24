@@ -1,0 +1,21 @@
+#90 triples detected in the JSON-LD
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sbd:   <https://www.sbd4nano.eu/rdf/#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix void:  <http://rdfs.org/ns/void#> .
+
+<https://search.data.enanomapper.net/closed/>
+ a                    void:DatasetDescription ;
+ dct:title            "Datasets hosted at search.data.enanomapper.net"@en ;
+ foaf:img             <https://search.data.enanomapper.net/assets/img/logo.png> .
+
+<https://search.data.enanomapper.net/about/sbd4nano> a sbd:Dataset ;
+  dc:source <https://search.data.enanomapper.net/closed/> ;
+  rdfs:label "sbd4nano - eNanoMapper database"@en ;
+  dc:description "H2020 SBD4Nano project data: Computing infrastructure for the definition, performance testing and implementation of safe-by-design approaches in nanotechnology supply chains"@en ;
+  dct:license <https://search.data.enanomapper.net/about/sbd4nano> ;
+  foaf:page <https://search.data.enanomapper.net/projects/sbd4nano> .
+
