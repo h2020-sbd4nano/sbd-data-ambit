@@ -1,3 +1,4 @@
+#187 triples detected in the JSON-LD
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 @prefix dct:   <http://purl.org/dc/terms/> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
@@ -12,23 +13,24 @@
  foaf:img             <https://search.data.enanomapper.net/assets/img/logo.png> ;
  dct:license          <http://creativecommons.org/publicdomain/zero/1.0/> . # license of this metadata
 
-<https://search.data.enanomapper.net/projects/enanomapper/> a sbd:Dataset ;
+<https://search.data.enanomapper.net/about/enanomapper> a sbd:Dataset ;
   dc:source <https://search.data.enanomapper.net/> ;
-  rdfs:label "FP7 eNanoMapper prototype database"@en ;
-  dc:description "Data from the FP7 eNanoMapper prototype database."@en ;
-  dct:license <https://search.data.enanomapper.net/about/enanomapper/> ;
-  foaf:page <https://search.data.enanomapper.net/projects/enanomapper/> .
+  rdfs:label "enanomapper - eNanoMapper database"@en ;
+  dc:description "FP7 eNanoMapper project data: A Database and Ontology Framework for Nanomaterials Design and Safety Assessment"@en ;
+  dct:license <https://search.data.enanomapper.net/about/enanomapper> ;
+  foaf:page <https://search.data.enanomapper.net/projects/enanomapper> .
 
-<https://search.data.enanomapper.net/projects/nanoreg/> a sbd:Dataset ;
+<https://search.data.enanomapper.net/about/nanoreg> a sbd:Dataset ;
   dc:source <https://search.data.enanomapper.net/> ;
-  rdfs:label "FP7 NANoREG - eNanoMapper database"@en ;
-  dc:description "Data from the FP7 NANoREG - eNanoMapper database."@en ;
-  dct:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  foaf:page <https://search.data.enanomapper.net/projects/nanoreg/> .
+  rdfs:label "nanoreg - eNanoMapper database"@en ;
+  dc:description "FP7 NANoREG project data: A common European approach to the regulatory testing of nanomaterials"@en ;
+  dct:license <https://search.data.enanomapper.net/about/nanoreg> ;
+  foaf:page <https://search.data.enanomapper.net/projects/nanoreg> .
 
-<https://search.data.enanomapper.net/projects/nanoreg2/> a sbd:Dataset ;
+<https://search.data.enanomapper.net/about/nanoreg2> a sbd:Dataset ;
   dc:source <https://search.data.enanomapper.net/> ;
-  rdfs:label "H2020 NanoReg2 - eNanoMapper database"@en ;
-  dc:description "Data from the H2020 NanoReg2 - eNanoMapper database."@en ;
-  dct:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-  foaf:page <https://search.data.enanomapper.net/projects/nanoreg2/> .
+  rdfs:label "nanoreg2 - eNanoMapper database"@en ;
+  dc:description "H2020 NanoReg2 project data: Development and implementation of Grouping and Safe-by-Design approaches within regulatory frameworks"@en ;
+  dct:license <https://search.data.enanomapper.net/about/nanoreg2> ;
+  foaf:page <https://search.data.enanomapper.net/projects/nanoreg2> .
+
