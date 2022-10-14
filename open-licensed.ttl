@@ -1,4 +1,4 @@
-#187 triples detected in the JSON-LD
+#236 triples detected in the JSON-LD
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 @prefix dct:   <http://purl.org/dc/terms/> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
@@ -12,6 +12,13 @@
  dct:title            "Datasets hosted at search.data.enanomapper.net"@en ;
  foaf:img             <https://search.data.enanomapper.net/assets/img/logo.png> ;
  dct:license          <http://creativecommons.org/publicdomain/zero/1.0/> . # license of this metadata
+
+<https://search.data.enanomapper.net/about/calibrate> a sbd:Dataset ;
+  dc:source <https://search.data.enanomapper.net/> ;
+  rdfs:label "calibrate - eNanoMapper database"@en ;
+  dc:description "H2020 caLIBRAte project data: Performance testing, calibration and implementation of a next generation system-of-systems Risk Governance Framework for nanomaterials"@en ;
+  dct:license <https://search.data.enanomapper.net/about/calibrate> ;
+  foaf:page <https://search.data.enanomapper.net/projects/calibrate> .
 
 <https://search.data.enanomapper.net/about/enanomapper> a sbd:Dataset ;
   dc:source <https://search.data.enanomapper.net/> ;
