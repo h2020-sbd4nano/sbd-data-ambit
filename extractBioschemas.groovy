@@ -12,21 +12,26 @@ jsoup = new net.bioclipse.managers.JSoupManager(".");
 
 databases = [
    "https://search.data.enanomapper.net/projects/gracious/" ,
-   "https://search.data.enanomapper.net/projects/gov4nano/" ,
    "https://search.data.enanomapper.net/projects/nanoinformatix/" ,
+
+   "https://search.data.enanomapper.net/projects/gov4nano/" ,
    "https://search.data.enanomapper.net/projects/riskgone/" ,
    "https://search.data.enanomapper.net/projects/patrols/" ,
    "https://search.data.enanomapper.net/projects/biorima/" ,
    "https://search.data.enanomapper.net/projects/sabydoma/" ,
    "https://search.data.enanomapper.net/projects/sbd4nano/" ,
+
+   "https://search.data.enanomapper.net/projects/sabyna/" ,
    "https://search.data.enanomapper.net/projects/harmless/" ,
    "https://search.data.enanomapper.net/projects/sunshine/" ,
    "https://search.data.enanomapper.net/projects/charisma/" ,
    "https://search.data.enanomapper.net/projects/polyrisk/" ,
    "https://search.data.enanomapper.net/projects/plasticheal/" ,
+
    "https://search.data.enanomapper.net/projects/plasticfate/" ,
-   "https://search.data.enanomapper.net/projects/cusp/" ,
-  "https://search.data.enanomapper.net/projects/sbd4nano/"
+   "https://search.data.enanomapper.net/projects/aurora/" ,
+   "https://search.data.enanomapper.net/projects/imptox/" ,
+   "https://search.data.enanomapper.net/projects/cusp/"
 ]
 
 kg = rdf.createInMemoryStore()
