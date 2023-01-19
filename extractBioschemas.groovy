@@ -36,7 +36,7 @@ databases = [
 
 kg = rdf.createInMemoryStore()
 
-for (database : databases) {
+for (database in databases) {
     htmlContent = bioclipse.download(database)
 
     htmlDom = jsoup.parseString(htmlContent)
@@ -45,9 +45,9 @@ for (database : databases) {
 
     bioschemasSections = jsoup.select(htmlDom, "script[type='application/ld+json']");
 
-    for (section : bioschemasSections) {
-    bioschemasJSON = section.html()
-    rdf.importFromString(kg, bioschemasJSON, "JSON-LD")
+    for (section in bioschemasSections) {
+        bioschemasJSON = section.html()
+        rdf.importFromString(kg, bioschemasJSON, "JSON-LD")
     }
 }
 
