@@ -9,7 +9,7 @@
 
 <https://search.data.enanomapper.net/closed/>
  a                    void:DatasetDescription ;
- dct:title            "Closed datasets hosted at search.data.enanomapper.net"@en ;
+ dct:title            "Closed datasets hosted at the Nanosafety Data Interface"@en ;
  foaf:img             <https://search.data.enanomapper.net/assets/img/logo.png> .
 
 <https://search.data.enanomapper.net/about/aurora> a sbd:Dataset ;

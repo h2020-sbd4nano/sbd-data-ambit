@@ -9,7 +9,7 @@
 
 <https://search.data.enanomapper.net/>
  a                    void:DatasetDescription ;
- dct:title            "Open datasets hosted at search.data.enanomapper.net"@en ;
+ dct:title            "Open datasets hosted at the Nanosafety Data Interface"@en ;
  foaf:img             <https://search.data.enanomapper.net/assets/img/logo.png> ;
  dct:license          <http://creativecommons.org/publicdomain/zero/1.0/> . # license of this metadata
 
