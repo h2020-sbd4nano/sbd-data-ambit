@@ -79,7 +79,7 @@ println "@prefix void:  <http://rdfs.org/ns/void#> ."
 println ""
 println "<https://search.data.enanomapper.net/closed/>"
 println " a                    void:DatasetDescription ;"
-println " dct:title            \"Closed datasets hosted at search.data.enanomapper.net\"@en ;"
+println " dct:title            \"Closed datasets hosted at the Nanosafety Data Interface\"@en ;"
 println " foaf:img             <https://search.data.enanomapper.net/assets/img/logo.png> ."
 println ""
 
