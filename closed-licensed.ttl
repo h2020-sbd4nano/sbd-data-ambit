@@ -1,0 +1,140 @@
+#959 triples detected in the JSON-LD
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sbd:   <https://www.sbd4nano.eu/rdf/#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix void:  <http://rdfs.org/ns/void#> .
+
+<https://search.data.enanomapper.net/closed/>
+ a                    void:DatasetDescription ;
+ dct:title            "Closed datasets hosted at search.data.enanomapper.net"@en ;
+ foaf:img             <https://search.data.enanomapper.net/assets/img/logo.png> .
+
+<https://search.data.enanomapper.net/about/aurora> a sbd:Dataset ;
+  dc:source <https://search.data.enanomapper.net/closed/> ;
+  rdfs:label "aurora - eNanoMapper database"@en ;
+  dc:description "H2020 AURORA project data: AURORA - Developing an actionable European roadmap for early-life health risk assessment of micro- and nanoplastic (MNP) pollution"@en ;
+  dct:license <https://search.data.enanomapper.net/about/aurora> ;
+  foaf:page <https://search.data.enanomapper.net/projects/aurora> .
+
+<https://search.data.enanomapper.net/about/biorima> a sbd:Dataset ;
+  dc:source <https://search.data.enanomapper.net/closed/> ;
+  rdfs:label "biorima - eNanoMapper database"@en ;
+  dc:description "H2020 BIORIMA project data: Risk Management of Biomaterials"@en ;
+  dct:license <https://search.data.enanomapper.net/about/biorima> ;
+  foaf:page <https://search.data.enanomapper.net/projects/biorima> .
+
+<https://search.data.enanomapper.net/about/charisma> a sbd:Dataset ;
+  dc:source <https://search.data.enanomapper.net/closed/> ;
+  rdfs:label "charisma - eNanoMapper database"@en ;
+  dc:description "H2020 CHARISMA project data: Characterization and HARmonization for Industrial Standardisation of advanced MAterials"@en ;
+  dct:license <https://search.data.enanomapper.net/about/charisma> ;
+  foaf:page <https://search.data.enanomapper.net/projects/charisma> .
+
+<https://search.data.enanomapper.net/about/cusp> a sbd:Dataset ;
+  dc:source <https://search.data.enanomapper.net/closed/> ;
+  rdfs:label "cusp - eNanoMapper database"@en ;
+  dc:description "CUSP project data: CUSP – the European research cluster to understand the health impacts of micro- and nanoplastics (MNPs)"@en ;
+  dct:license <https://search.data.enanomapper.net/about/cusp> ;
+  foaf:page <https://search.data.enanomapper.net/projects/cusp> .
+
+<https://search.data.enanomapper.net/about/gov4nano> a sbd:Dataset ;
+  dc:source <https://search.data.enanomapper.net/closed/> ;
+  rdfs:label "gov4nano - eNanoMapper database"@en ;
+  dc:description "H2020 Gov4Nano project data: Implementation of Risk Governance: meeting the needs of nanotechnology"@en ;
+  dct:license <https://search.data.enanomapper.net/about/gov4nano> ;
+  foaf:page <https://search.data.enanomapper.net/projects/gov4nano> .
+
+<https://search.data.enanomapper.net/about/gracious> a sbd:Dataset ;
+  dc:source <https://search.data.enanomapper.net/closed/> ;
+  rdfs:label "gracious - eNanoMapper database"@en ;
+  dc:description "H2020 GRACIOUS project data: Grouping materials for Risk Assessment"@en ;
+  dct:license <https://search.data.enanomapper.net/about/gracious> ;
+  foaf:page <https://search.data.enanomapper.net/projects/gracious> .
+
+<https://search.data.enanomapper.net/about/harmless> a sbd:Dataset ;
+  dc:source <https://search.data.enanomapper.net/closed/> ;
+  rdfs:label "harmless - eNanoMapper database"@en ;
+  dc:description "H2020 HARMLESS project data: Advanced High Aspect Ratio and Multicomponent materials: towards comprehensive intelLigent tEsting and Safe by design Strategies"@en ;
+  dct:license <https://search.data.enanomapper.net/about/harmless> ;
+  foaf:page <https://search.data.enanomapper.net/projects/harmless> .
+
+<https://search.data.enanomapper.net/about/imptox> a sbd:Dataset ;
+  dc:source <https://search.data.enanomapper.net/closed/> ;
+  rdfs:label "imptox - eNanoMapper database"@en ;
+  dc:description "H2020 IMPTOX project data: An innovative analytical platform to investigate the effect and toxicity of micro and nano plastics combined with environmental contaminants on the risk of allergic disease in preclinical and clinical models"@en ;
+  dct:license <https://search.data.enanomapper.net/about/imptox> ;
+  foaf:page <https://search.data.enanomapper.net/projects/imptox> .
+
+<https://search.data.enanomapper.net/about/nanoinformatix> a sbd:Dataset ;
+  dc:source <https://search.data.enanomapper.net/closed/> ;
+  rdfs:label "nanoinformatix - eNanoMapper database"@en ;
+  dc:description "H2020 NanoinformaTIX project data: Development and Implementation of a Sustainable Modelling Platform for NanoInformatics"@en ;
+  dct:license <https://search.data.enanomapper.net/about/nanoinformatix> ;
+  foaf:page <https://search.data.enanomapper.net/projects/nanoinformatix> .
+
+<https://search.data.enanomapper.net/about/patrols> a sbd:Dataset ;
+  dc:source <https://search.data.enanomapper.net/closed/> ;
+  rdfs:label "patrols - eNanoMapper database"@en ;
+  dc:description "H2020 PATROLS project data: PATROLS - Physiologically Anchored Tools for Realistic nanOmateriaL hazard aSsessment"@en ;
+  dct:license <https://search.data.enanomapper.net/about/patrols> ;
+  foaf:page <https://search.data.enanomapper.net/projects/patrols> .
+
+<https://search.data.enanomapper.net/about/plasticfate> a sbd:Dataset ;
+  dc:source <https://search.data.enanomapper.net/closed/> ;
+  rdfs:label "plasticfate - eNanoMapper database"@en ;
+  dc:description "H2020 PlasticFatE project data: Plastics fate and effects in the human body"@en ;
+  dct:license <https://search.data.enanomapper.net/about/plasticfate> ;
+  foaf:page <https://search.data.enanomapper.net/projects/plasticfate> .
+
+<https://search.data.enanomapper.net/about/plasticheal> a sbd:Dataset ;
+  dc:source <https://search.data.enanomapper.net/closed/> ;
+  rdfs:label "plasticheal - eNanoMapper database"@en ;
+  dc:description "H2020 PLASTICHEAL project data: Innovative tools to study the impact and mode of action of micro and nanoplastics on human health: towards a knowledge base for risk assessment"@en ;
+  dct:license <https://search.data.enanomapper.net/about/plasticheal> ;
+  foaf:page <https://search.data.enanomapper.net/projects/plasticheal> .
+
+<https://search.data.enanomapper.net/about/polyrisk> a sbd:Dataset ;
+  dc:source <https://search.data.enanomapper.net/closed/> ;
+  rdfs:label "polyrisk - eNanoMapper database"@en ;
+  dc:description "H2020 POLYRISK project data: POLYRISK - Understanding human exposure and health hazard of micro- and nanoplastic contaminants in our environment"@en ;
+  dct:license <https://search.data.enanomapper.net/about/polyrisk> ;
+  foaf:page <https://search.data.enanomapper.net/projects/polyrisk> .
+
+<https://search.data.enanomapper.net/about/riskgone> a sbd:Dataset ;
+  dc:source <https://search.data.enanomapper.net/closed/> ;
+  rdfs:label "riskgone - eNanoMapper database"@en ;
+  dc:description "H2020 RiskGone project data: Science-based Risk Governance of Nano-Technology"@en ;
+  dct:license <https://search.data.enanomapper.net/about/riskgone> ;
+  foaf:page <https://search.data.enanomapper.net/projects/riskgone> .
+
+<https://search.data.enanomapper.net/about/sabydoma> a sbd:Dataset ;
+  dc:source <https://search.data.enanomapper.net/closed/> ;
+  rdfs:label "sabydoma - eNanoMapper database"@en ;
+  dc:description "H2020 SABYDOMA project data: Safety BY Design Of nanoMaterials - From Lab Manufacture to Governance and Communication: Progressing Up the TRL Ladder"@en ;
+  dct:license <https://search.data.enanomapper.net/about/sabydoma> ;
+  foaf:page <https://search.data.enanomapper.net/projects/sabydoma> .
+
+<https://search.data.enanomapper.net/about/sabyna> a sbd:Dataset ;
+  dc:source <https://search.data.enanomapper.net/closed/> ;
+  rdfs:label "sabyna - eNanoMapper database"@en ;
+  dc:description "H2020 SAbyNA project data: SAbyNA - Simple, robust and cost-effective approaches to guide industry in the development of safer nanomaterials and nano-enabled products"@en ;
+  dct:license <https://search.data.enanomapper.net/about/sabyna> ;
+  foaf:page <https://search.data.enanomapper.net/projects/sabyna> .
+
+<https://search.data.enanomapper.net/about/sbd4nano> a sbd:Dataset ;
+  dc:source <https://search.data.enanomapper.net/closed/> ;
+  rdfs:label "sbd4nano - eNanoMapper database"@en ;
+  dc:description "H2020 SBD4Nano project data: Computing infrastructure for the definition, performance testing and implementation of safe-by-design approaches in nanotechnology supply chains"@en ;
+  dct:license <https://search.data.enanomapper.net/about/sbd4nano> ;
+  foaf:page <https://search.data.enanomapper.net/projects/sbd4nano> .
+
+<https://search.data.enanomapper.net/about/sunshine> a sbd:Dataset ;
+  dc:source <https://search.data.enanomapper.net/closed/> ;
+  rdfs:label "sunshine - eNanoMapper database"@en ;
+  dc:description "H2020 SUNSHINE project data: SUNSHINE - Safe and Sustainable Design for Advanced Materials"@en ;
+  dct:license <https://search.data.enanomapper.net/about/sunshine> ;
+  foaf:page <https://search.data.enanomapper.net/projects/sunshine> .
+
