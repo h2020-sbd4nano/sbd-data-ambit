@@ -9,7 +9,7 @@ on:
       - '*.groovy'
 
 jobs:
-  webpage:
+  bioschemas:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -20,16 +20,16 @@ jobs:
       - name: Install groovy
         run: sudo apt install groovy
 
-      - name: Generate website
+      - name: Extract Bioschemas
         run: |
           groovy extractBioschemasOpen.groovy | tee open-licensed.ttl
           groovy extractBioschemas.groovy | tee closed-licensed.ttl
 
-      - name: Commit report
+      - name: Commit Turtle
         run: |
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
-          git add docs/service/*.md
+          git add *.ttl
           if git diff --exit-code --staged; then
               echo "No changes"
           else
