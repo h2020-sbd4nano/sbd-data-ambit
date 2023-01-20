@@ -84,7 +84,7 @@ println " foaf:img             <https://search.data.enanomapper.net/assets/img/l
 println ""
 
 for (i=1;i<=results.rowCount;i++) {
-println "<${results.get(i, "dataset")}> a sbd:Dataset ;"
+println "<${results.get(i, "dataset")}> a sbd:Database ;"
 println "  dc:source <https://search.data.enanomapper.net/closed/> ;"
 if (results.get(i, "name") != null) println "  rdfs:label \"${results.get(i, "name")}\"@en ;"
 if (results.get(i, "description") != null) println "  dc:description \"${results.get(i, "description")}\"@en ;"
