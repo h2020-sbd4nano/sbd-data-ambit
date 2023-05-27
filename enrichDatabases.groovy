@@ -126,10 +126,10 @@ for (doc in ambitData.response.docs) {
     if (materialsURImap.containsKey(substanceType)) {
       rdf.addObjectProperty(kg, ownerURImap.get(ownerName), "https://www.sbd4nano.eu/bel/#NP", materialsURImap.get(substanceType))
     } else {
-      println "# unknown substance type: ${substanceType}"
+      // println "# unknown substance type: ${substanceType}"
     }
   } else {
-    println "# unknown owner: ${ownerName}"
+    // println "# unknown owner: ${ownerName}"
   } 
 }
 
