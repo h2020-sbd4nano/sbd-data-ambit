@@ -24,6 +24,7 @@ jobs:
         run: |
           groovy extractBioschemasOpen.groovy | tee open-licensed.ttl
           groovy extractBioschemas.groovy | tee closed-licensed.ttl
+          groovy enrichDatabases.groovy | tee npAnnotations.ttl
 
       - name: Commit Turtle
         run: |
