@@ -1,4 +1,4 @@
-#1811 triples detected in the JSON-LD
+#1732 triples detected in the JSON-LD
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 @prefix dct:   <http://purl.org/dc/terms/> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
@@ -9,6 +9,7 @@
 
 <https://search.data.enanomapper.net/closed/>
  a                    void:DatasetDescription ;
+ dc:source            <https://search.data.enanomapper.net/> ;
  dct:title            "Closed datasets hosted at the Nanosafety Data Interface"@en ;
  foaf:img             <https://search.data.enanomapper.net/assets/img/logo.png> .
 
@@ -46,13 +47,6 @@
   dc:description "H2020 Gov4Nano project data: Implementation of Risk Governance: meeting the needs of nanotechnology"@en ;
   dct:license <https://search.data.enanomapper.net/about/gov4nano> ;
   foaf:page <https://search.data.enanomapper.net/projects/gov4nano> .
-
-<https://search.data.enanomapper.net/about/gracious> a sbd:Database ;
-  dc:source <https://search.data.enanomapper.net/closed/> ;
-  rdfs:label "gracious - eNanoMapper database"@en ;
-  dc:description "H2020 GRACIOUS project data: Grouping materials for Risk Assessment"@en ;
-  dct:license <https://search.data.enanomapper.net/about/gracious> ;
-  foaf:page <https://search.data.enanomapper.net/projects/gracious> .
 
 <https://search.data.enanomapper.net/about/harmless> a sbd:Database ;
   dc:source <https://search.data.enanomapper.net/closed/> ;
