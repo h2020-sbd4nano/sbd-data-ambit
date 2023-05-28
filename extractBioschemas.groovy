@@ -11,7 +11,6 @@ rdf = new net.bioclipse.managers.RDFManager(".");
 jsoup = new net.bioclipse.managers.JSoupManager(".");
 
 databases = [
-   "https://search.data.enanomapper.net/projects/gracious/" ,
    "https://search.data.enanomapper.net/projects/nanoinformatix/" ,
 
    "https://search.data.enanomapper.net/projects/gov4nano/" ,

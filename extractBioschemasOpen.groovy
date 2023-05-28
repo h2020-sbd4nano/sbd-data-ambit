@@ -14,6 +14,7 @@ databases = [
   "https://search.data.enanomapper.net/projects/enanomapper/" ,
   "https://search.data.enanomapper.net/projects/nanoreg2/" ,
   "https://search.data.enanomapper.net/projects/nanoreg/" ,
+  "https://search.data.enanomapper.net/projects/gracious/" ,
   "https://search.data.enanomapper.net/projects/calibrate/"
 ]
 
