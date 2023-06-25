@@ -24,7 +24,7 @@
 <https://search.data.enanomapper.net/about/enanomapper> a sbd:Database ;
   dc:source <https://search.data.enanomapper.net/> ;
   rdfs:label "enanomapper - eNanoMapper database"@en ;
-  dc:description "FP7 eNanoMapper project data: A Database and Ontology Framework for Nanomaterials Design and Safety Assessment"@en ;
+  dc:description "eNanoMapper project data: A Database and Ontology Framework for Nanomaterials Design and Safety Assessment"@en ;
   dct:license <https://search.data.enanomapper.net/about/enanomapper> ;
   foaf:page <https://search.data.enanomapper.net/projects/enanomapper> .
 
