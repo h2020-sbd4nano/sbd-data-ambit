@@ -14,38 +14,38 @@
  foaf:img             <https://search.data.enanomapper.net/assets/img/logo.png> ;
  dct:license          <http://creativecommons.org/publicdomain/zero/1.0/> . # license of this metadata
 
-<https://search.data.enanomapper.net/about/calibrate> a sbd:Database ;
+<https://enanomapper.adma.ai/about/calibrate> a sbd:Database ;
   dc:source <https://search.data.enanomapper.net/> ;
   rdfs:label "calibrate - eNanoMapper database"@en ;
   dc:description "H2020 caLIBRAte project data: Performance testing, calibration and implementation of a next generation system-of-systems Risk Governance Framework for nanomaterials"@en ;
-  dct:license <https://search.data.enanomapper.net/about/calibrate> ;
-  foaf:page <https://search.data.enanomapper.net/projects/calibrate> .
+  dct:license <https://enanomapper.adma.ai/about/calibrate> ;
+  foaf:page <https://enanomapper.adma.ai/projects/calibrate> .
 
-<https://search.data.enanomapper.net/about/enanomapper> a sbd:Database ;
+<https://enanomapper.adma.ai/about/enanomapper> a sbd:Database ;
   dc:source <https://search.data.enanomapper.net/> ;
   rdfs:label "enanomapper - eNanoMapper database"@en ;
   dc:description "eNanoMapper project data: A Database and Ontology Framework for Nanomaterials Design and Safety Assessment"@en ;
-  dct:license <https://search.data.enanomapper.net/about/enanomapper> ;
-  foaf:page <https://search.data.enanomapper.net/projects/enanomapper> .
+  dct:license <https://enanomapper.adma.ai/about/enanomapper> ;
+  foaf:page <https://enanomapper.adma.ai/projects/enanomapper> .
 
-<https://search.data.enanomapper.net/about/gracious> a sbd:Database ;
+<https://enanomapper.adma.ai/about/gracious> a sbd:Database ;
   dc:source <https://search.data.enanomapper.net/> ;
   rdfs:label "gracious - eNanoMapper database"@en ;
   dc:description "H2020 GRACIOUS project data: Grouping materials for Risk Assessment"@en ;
-  dct:license <https://search.data.enanomapper.net/about/gracious> ;
-  foaf:page <https://search.data.enanomapper.net/projects/gracious> .
+  dct:license <https://enanomapper.adma.ai/about/gracious> ;
+  foaf:page <https://enanomapper.adma.ai/projects/gracious> .
 
-<https://search.data.enanomapper.net/about/nanoreg> a sbd:Database ;
+<https://enanomapper.adma.ai/about/nanoreg> a sbd:Database ;
   dc:source <https://search.data.enanomapper.net/> ;
   rdfs:label "nanoreg - eNanoMapper database"@en ;
   dc:description "FP7 NANoREG project data: A common European approach to the regulatory testing of nanomaterials"@en ;
-  dct:license <https://search.data.enanomapper.net/about/nanoreg> ;
-  foaf:page <https://search.data.enanomapper.net/projects/nanoreg> .
+  dct:license <https://enanomapper.adma.ai/about/nanoreg> ;
+  foaf:page <https://enanomapper.adma.ai/projects/nanoreg> .
 
-<https://search.data.enanomapper.net/about/nanoreg2> a sbd:Database ;
+<https://enanomapper.adma.ai/about/nanoreg2> a sbd:Database ;
   dc:source <https://search.data.enanomapper.net/> ;
   rdfs:label "nanoreg2 - eNanoMapper database"@en ;
   dc:description "H2020 NanoReg2 project data: Development and implementation of Grouping and Safe-by-Design approaches within regulatory frameworks"@en ;
-  dct:license <https://search.data.enanomapper.net/about/nanoreg2> ;
-  foaf:page <https://search.data.enanomapper.net/projects/nanoreg2> .
+  dct:license <https://enanomapper.adma.ai/about/nanoreg2> ;
+  foaf:page <https://enanomapper.adma.ai/projects/nanoreg2> .
 
