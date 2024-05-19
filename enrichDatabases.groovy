@@ -11,7 +11,7 @@ import groovy.json.JsonSlurper
 bioclipse = new net.bioclipse.managers.BioclipseManager(".");
 rdf = new net.bioclipse.managers.RDFManager(".");
 
-url = "https://data.enanomapper.net/solr/metadata/select?q=*:*&rows=1000000&fl=owner_name:owner_name_s,substanceType:substanceType_s,publicname:publicname_s,topcategory:topcategory_s,endpointcategory:endpointcategory_s,E_method_synonym:E.method_synonym_ss,E_method:E.method_s,endpoint_synonym:effectendpoint_synonym_ss,endpoint:effectendpoint_s,number_of_study:number_of_points_d"
+url = "https://data.enanomapper.net/solr/metadata/select?q=*:*&rows=1000000&fl=owner_name:owner_name_s,substanceType:substanceType_s,publicname:publicname_s,topcategory:topcategory_s,endpointcategory:endpointcategory_s,E_method_synonym:E.method_synonym_ss,E_method:E.method_s,endpoint_synonym:effectendpoint_synonym_ss,endpoint:effectendpoint_s,number_of_study:number_of_points_d,name:name_s"
 
 ambitContent = bioclipse.download(url)
 
