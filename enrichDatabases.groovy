@@ -146,6 +146,8 @@ for (doc in ambitData.response.docs) {
     rdf.addObjectProperty(kg, "https://nanocommons.github.io/identifiers/registry#" + name,
       "http://www.w3.org/2000/01/rdf-schema#subClassOf",
       materialsURImap.get(substanceType))
+    rdf.addDataProperty(kg, "https://nanocommons.github.io/identifiers/registry#" + name,
+      "http://www.w3.org/2000/01/rdf-schema#label", name)
   }
   if (ownerURImap.containsKey(ownerName)) {
     if (materialsURImap.containsKey(substanceType)) {
