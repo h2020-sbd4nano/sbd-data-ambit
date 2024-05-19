@@ -23,6 +23,7 @@ rdf.addPrefix(kg, "sbdbel", "https://www.sbd4nano.eu/bel/#")
 rdf.addPrefix(kg, "enm", "http://purl.enanomapper.org/onto/")
 rdf.addPrefix(kg, "npo", "http://purl.bioontology.org/ontology/npo#")
 rdf.addPrefix(kg, "obo", "http://purl.obolibrary.org/obo/")
+rdf.addPrefix(kg, "erm", "https://nanocommons.github.io/identifiers/registry#")
 
 ownerURImap = new HashMap()
 ownerURImap.put("caLIBRAte", "https://enanomapper.adma.ai/about/calibrate")
@@ -127,10 +128,21 @@ materialsURImap.put("C62387", "http://purl.obolibrary.org/obo/NCIT_C62387")
 materialsURImap.put("C569492", "http://purl.obolibrary.org/obo/NCIT_C569492")
 materialsURImap.put("C113679", "http://purl.obolibrary.org/obo/NCIT_C113679")
 
+boolean isInteger(string) {
+  try { Integer.parseInt(string); } catch (Exception e) { return false; }
+  return true;
+}
 
 for (doc in ambitData.response.docs) {
   ownerName = doc.owner_name 
   substanceType = doc.substanceType
+  name = doc.name
+  if (name != null && name.length() == 11 &&
+      name.startsWith("ERM0") && isInteger(name.substring(3))) {
+    // the name is an ERM identifier
+    rdf.addObjectProperty(kg, ownerURImap.get(ownerName), "https://www.sbd4nano.eu/bel/#NP",
+      "https://nanocommons.github.io/identifiers/registry#" + name)
+  }
   if (ownerURImap.containsKey(ownerName)) {
     if (materialsURImap.containsKey(substanceType)) {
       rdf.addObjectProperty(kg, ownerURImap.get(ownerName), "https://www.sbd4nano.eu/bel/#NP", materialsURImap.get(substanceType))
