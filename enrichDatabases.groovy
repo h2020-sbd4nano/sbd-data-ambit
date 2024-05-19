@@ -24,6 +24,7 @@ rdf.addPrefix(kg, "enm", "http://purl.enanomapper.org/onto/")
 rdf.addPrefix(kg, "npo", "http://purl.bioontology.org/ontology/npo#")
 rdf.addPrefix(kg, "obo", "http://purl.obolibrary.org/obo/")
 rdf.addPrefix(kg, "erm", "https://nanocommons.github.io/identifiers/registry#")
+rdf.addPrefix(kg, "rdfs", "http://www.w3.org/2000/01/rdf-schema#")
 
 ownerURImap = new HashMap()
 ownerURImap.put("caLIBRAte", "https://enanomapper.adma.ai/about/calibrate")
@@ -142,6 +143,9 @@ for (doc in ambitData.response.docs) {
     // the name is an ERM identifier
     rdf.addObjectProperty(kg, ownerURImap.get(ownerName), "https://www.sbd4nano.eu/bel/#NP",
       "https://nanocommons.github.io/identifiers/registry#" + name)
+    rdf.addObjectProperty(kg, "https://nanocommons.github.io/identifiers/registry#" + name,
+      "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+      materialsURImap.get(substanceType))
   }
   if (ownerURImap.containsKey(ownerName)) {
     if (materialsURImap.containsKey(substanceType)) {
