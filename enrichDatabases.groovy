@@ -55,6 +55,48 @@ ownerURImap.put("SBD4NANO", "https://enanomapper.adma.ai/about/sbd4nano")
 //ownerURImap.put("MESOCOSM", "")
 //ownerURImap.put("NPK", "")
 
+recognizedJRCNMs = new HashMap()
+// I should replace this with BridgeDb :/
+recognizedJRCNMs.put("JRCNM02000a", "http://purl.enanomapper.org/onto/ENM_9000087")
+recognizedJRCNMs.put("JRCNM01000a", "http://purl.enanomapper.org/onto/ENM_9000074")
+recognizedJRCNMs.put("JRCNM01001a", "http://purl.enanomapper.org/onto/ENM_9000075")
+recognizedJRCNMs.put("JRCNM01002a", "http://purl.enanomapper.org/onto/ENM_9000076")
+recognizedJRCNMs.put("JRCNM01003a", "http://purl.enanomapper.org/onto/ENM_9000083")
+recognizedJRCNMs.put("JRCNM01004a", "http://purl.enanomapper.org/onto/ENM_9000084")
+recognizedJRCNMs.put("JRCNM01005a", "http://purl.enanomapper.org/onto/ENM_9000077")
+recognizedJRCNMs.put("JRCNM01100a", "http://purl.enanomapper.org/onto/ENM_9000078")
+recognizedJRCNMs.put("JRCNM01101a", "http://purl.enanomapper.org/onto/ENM_9000086")
+recognizedJRCNMs.put("JRCNM02001a", "http://purl.enanomapper.org/onto/ENM_9000088")
+recognizedJRCNMs.put("JRCNM02002a", "http://purl.enanomapper.org/onto/ENM_9000089")
+recognizedJRCNMs.put("JRCNM02003a", "http://purl.enanomapper.org/onto/ENM_9000090")
+recognizedJRCNMs.put("JRCNM02004a", "http://purl.enanomapper.org/onto/ENM_9000091")
+recognizedJRCNMs.put("JRCNM02101a", "http://purl.enanomapper.org/onto/ENM_9000237")
+recognizedJRCNMs.put("JRCNM02102a", "http://purl.enanomapper.org/onto/ENM_9000238")
+recognizedJRCNMs.put("JRCNM04000a", "http://purl.enanomapper.org/onto/ENM_9000080")
+recognizedJRCNMs.put("JRCNM04001a", "http://purl.enanomapper.org/onto/ENM_9000081")
+recognizedJRCNMs.put("JRCNM04002a", "http://purl.enanomapper.org/onto/ENM_9000261")
+recognizedJRCNMs.put("JRCNM04003a", "http://purl.enanomapper.org/onto/ENM_9000262")
+recognizedJRCNMs.put("JRCNM06000a", "http://purl.enanomapper.org/onto/ENM_9000234")
+recognizedJRCNMs.put("JRCNM06000A", "http://purl.enanomapper.org/onto/ENM_9000234")
+recognizedJRCNMs.put("JRCNM10200a", "http://purl.enanomapper.org/onto/ENM_9000231")
+recognizedJRCNMs.put("JRCNM10202a", "http://purl.enanomapper.org/onto/ENM_9000232")
+// recognizedJRCNMs.put("JRCNM10404a", "http://purl.enanomapper.org/onto/ENM_9000093") ??
+recognizedJRCNMs.put("JRCNM40001a", "http://purl.enanomapper.org/onto/ENM_9000216")
+recognizedJRCNMs.put("JRCNM40002a", "http://purl.enanomapper.org/onto/ENM_9000217")
+recognizedJRCNMs.put("JRCNM40003a", "http://purl.enanomapper.org/onto/ENM_9000218")
+recognizedJRCNMs.put("JRCNM40004a", "http://purl.enanomapper.org/onto/ENM_9000219")
+recognizedJRCNMs.put("JRCNM40005a", "http://purl.enanomapper.org/onto/ENM_9000220")
+recognizedJRCNMs.put("JRCNM40006a", "http://purl.enanomapper.org/onto/ENM_9000221")
+recognizedJRCNMs.put("JRCNM40007a", "http://purl.enanomapper.org/onto/ENM_9000222")
+recognizedJRCNMs.put("JRCNM40008a", "http://purl.enanomapper.org/onto/ENM_9000223")
+recognizedJRCNMs.put("JRCNM40009a", "http://purl.enanomapper.org/onto/ENM_9000224")
+recognizedJRCNMs.put("JRCNM40010a", "http://purl.enanomapper.org/onto/ENM_9000225")
+recognizedJRCNMs.put("JRCNM46000a", "http://purl.enanomapper.org/onto/ENM_9000263")
+recognizedJRCNMs.put("JRCNM50001a", "http://purl.enanomapper.org/onto/ENM_9000256")
+recognizedJRCNMs.put("JRCNM62001a", "http://purl.enanomapper.org/onto/ENM_9000095")
+recognizedJRCNMs.put("JRCNM62002a", "http://purl.enanomapper.org/onto/ENM_9000096")
+recognizedJRCNMs.put("JRCNM62101a", "http://purl.enanomapper.org/onto/ENM_9000079")
+
 // for the next, see also https://search.data.enanomapper.net/assets/js/search/ont.js?g=1683886584905
 
 materialsURImap = new HashMap()
@@ -138,20 +180,37 @@ for (doc in ambitData.response.docs) {
   ownerName = doc.owner_name 
   substanceType = doc.substanceType
   name = doc.name
-  if (name != null && name.length() == 11 &&
-      name.startsWith("ERM0") && isInteger(name.substring(3))) {
-    // the name is an ERM identifier
-    rdf.addObjectProperty(kg, ownerURImap.get(ownerName), "https://www.sbd4nano.eu/bel/#NP",
-      "https://nanocommons.github.io/identifiers/registry#" + name)
-    rdf.addObjectProperty(kg, "https://nanocommons.github.io/identifiers/registry#" + name,
-      "http://www.w3.org/2000/01/rdf-schema#subClassOf",
-      materialsURImap.get(substanceType))
-    rdf.addDataProperty(kg, "https://nanocommons.github.io/identifiers/registry#" + name,
-      "http://www.w3.org/2000/01/rdf-schema#label", name)
-  }
+  publicname = doc.publicname
+
   if (ownerURImap.containsKey(ownerName)) {
+    ownerURI = ownerURImap.get(ownerName)
+
+    // recognize identifiers in the 'name' field
+    if (name != null && name.length() == 11 &&
+        name.startsWith("ERM0") && isInteger(name.substring(3))) {
+      // the name is an ERM identifier
+      rdf.addObjectProperty(kg, ownerURI, "https://www.sbd4nano.eu/bel/#NP",
+        "https://nanocommons.github.io/identifiers/registry#" + name)
+      rdf.addObjectProperty(kg, "https://nanocommons.github.io/identifiers/registry#" + name,
+        "http://www.w3.org/2000/01/rdf-schema#subClassOf",
+        materialsURImap.get(substanceType))
+      rdf.addDataProperty(kg, "https://nanocommons.github.io/identifiers/registry#" + name,
+        "http://www.w3.org/2000/01/rdf-schema#label", name)
+    }
+
+    // recognize identifiers in the 'publicname' field
+    if (publicname != null && publicname.startsWith("JRCNM")) {
+      if (recognizedJRCNMs.containsKey(publicname)) {
+        enmIRI = recognizedJRCNMs.get(publicname)
+        // the name is an ERM identifier
+        rdf.addObjectProperty(kg, ownerURI, "https://www.sbd4nano.eu/bel/#NP", enmIRI)
+      } else {
+        // println "# unrecognized JRNM identifier: ${publicname}"
+      }
+    }
+
     if (materialsURImap.containsKey(substanceType)) {
-      rdf.addObjectProperty(kg, ownerURImap.get(ownerName), "https://www.sbd4nano.eu/bel/#NP", materialsURImap.get(substanceType))
+      rdf.addObjectProperty(kg, ownerURI, "https://www.sbd4nano.eu/bel/#NP", materialsURImap.get(substanceType))
     } else {
       // println "# unknown substance type: ${substanceType}"
     }
