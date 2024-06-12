@@ -1,3 +1,5 @@
+[![Extract Bioschemas](https://github.com/h2020-sbd4nano/sbd-data-ambit/actions/workflows/extractBioschemas.yml/badge.svg)](https://github.com/h2020-sbd4nano/sbd-data-ambit/actions/workflows/extractBioschemas.yml)
+
 # sbd-data-ambit
 
 Repository with SbD4Nano Landscape content for https://search.data.enanomapper.net
