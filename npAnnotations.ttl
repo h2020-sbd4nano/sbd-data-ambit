@@ -18,10 +18,13 @@ erm:ERM00000595  rdfs:label  "ERM00000595" ;
         rdfs:subClassOf  obo:CHEBI_51050 .
 
 <https://enanomapper.adma.ai/about/harmless>
-        sbdbel:NP  obo:CHEBI_140503 , enm:ENM_8000245 , enm:ENM_9000081 , obo:CHEBI_82297 , npo:NPO_729 , erm:ERM00000496 , obo:CHEBI_133337 , erm:ERM00000504 , npo:NPO_1373 , erm:ERM00000493 , erm:ERM00000503 , erm:ERM00000501 , obo:NCIT_C569492 , obo:CHEBI_59999 , obo:CHEBI_133354 , erm:ERM00000506 , obo:CHEBI_51050 , erm:ERM00000490 , erm:ERM00000498 , npo:NPO_1544 , erm:ERM00000488 , enm:ENM_9000254 , enm:ENM_9000080 , enm:ENM_9000087 , npo:NPO_354 , enm:ENM_8000305 , erm:ERM00000494 , obo:CHEBI_133333 , erm:ERM00000502 , erm:ERM00000509 , erm:ERM00000500 , enm:ENM_9000234 , obo:CHEBI_46727 , npo:NPO_1548 , erm:ERM00000489 , erm:ERM00000487 , erm:ERM00000497 , erm:ERM00000505 , enm:ENM_9000090 , obo:CHEBI_133340 , enm:ENM_9000007 , obo:CHEBI_48730 , erm:ERM00000492 , erm:ERM00000507 , erm:ERM00000491 , erm:ERM00000499 .
+        sbdbel:NP  obo:CHEBI_140503 , enm:ENM_8000245 , enm:ENM_9000081 , obo:CHEBI_82297 , npo:NPO_729 , npo:NPO_589 , erm:ERM00000496 , obo:CHEBI_133337 , erm:ERM00000504 , npo:NPO_1373 , erm:ERM00000493 , erm:ERM00000503 , erm:ERM00000501 , obo:NCIT_C569492 , obo:CHEBI_59999 , obo:CHEBI_133354 , erm:ERM00000506 , obo:CHEBI_51050 , erm:ERM00000490 , erm:ERM00000498 , npo:NPO_1544 , erm:ERM00000488 , enm:ENM_9000254 , enm:ENM_9000080 , enm:ENM_9000087 , npo:NPO_354 , enm:ENM_8000305 , erm:ERM00000494 , obo:CHEBI_133333 , erm:ERM00000502 , erm:ERM00000509 , erm:ERM00000500 , enm:ENM_9000234 , obo:CHEBI_133326 , obo:CHEBI_46727 , npo:NPO_126 , erm:ERM00000636 , npo:NPO_1548 , erm:ERM00000489 , erm:ERM00000487 , erm:ERM00000633 , erm:ERM00000497 , enm:ENM_9000078 , erm:ERM00000505 , enm:ENM_9000090 , obo:CHEBI_133340 , npo:NPO_943 , enm:ENM_9000007 , erm:ERM00000508 , npo:NPO_1542 , obo:CHEBI_48730 , erm:ERM00000492 , erm:ERM00000507 , npo:NPO_1541 , erm:ERM00000491 , erm:ERM00000499 .
 
 <https://enanomapper.adma.ai/about/nanoinformatix>
         sbdbel:NP  enm:ENM_9000237 , enm:ENM_9000095 , enm:ENM_9000075 , enm:ENM_9000080 , npo:NPO_1542 , npo:NPO_1544 , npo:NPO_401 , enm:ENM_9000079 , enm:ENM_9000006 , enm:ENM_9000087 , obo:CHEBI_51050 , npo:NPO_354 , npo:NPO_1373 , enm:ENM_9000077 , enm:ENM_9000084 , enm:ENM_9000238 , npo:NPO_1892 , enm:ENM_9000081 .
+
+erm:ERM00000633  rdfs:label  "ERM00000633" ;
+        rdfs:subClassOf  []  .
 
 erm:ERM00000605  rdfs:label  "ERM00000605" ;
         rdfs:subClassOf  obo:CHEBI_51050 .
@@ -119,6 +122,16 @@ erm:ERM00000086  rdfs:label  "ERM00000086" ;
 <https://enanomapper.adma.ai/about/omics/>
         sbdbel:NP  npo:NPO_1892 , obo:ENVO_02000102 , obo:CHEBI_82297 , npo:NPO_707 , enm:ENM_9000262 , npo:NPO_126 , npo:NPO_1374 , obo:NCIT_C113679 , obo:ENVO_00002008 , obo:CHEBI_50595 , npo:NPO_943 , obo:CHEBI_131897 , npo:NPO_371 , enm:ENM_9000081 , obo:CHEBI_33416 , obo:CHEBI_46661 , npo:NPO_1542 , npo:NPO_589 , enm:ENM_9000254 , obo:CHEBI_132889 , obo:ENVO_01000060 , npo:NPO_1373 , npo:NPO_729 , enm:ENM_9000006 , npo:NPO_965 , npo:NPO_401 , obo:NCIT_C62387 , enm:ENM_9000239 , enm:ENM_9000080 , obo:CHEBI_51050 , enm:ENM_9000084 , npo:NPO_122 , enm:ENM_9000008 , obo:CHEBI_46727 , npo:NPO_354 , obo:CHEBI_33418 , obo:ENVO_00002985 , obo:CHEBI_50596 , npo:NPO_1544 , enm:ENM_9000005 .
 
+erm:ERM00000636  rdfs:label  "ERM00000636" ;
+        rdfs:subClassOf  []  ;
+        rdfs:subClassOf  []  ;
+        rdfs:subClassOf  []  ;
+        rdfs:subClassOf  []  ;
+        rdfs:subClassOf  []  ;
+        rdfs:subClassOf  []  ;
+        rdfs:subClassOf  []  ;
+        rdfs:subClassOf  []  .
+
 erm:ERM00000498  rdfs:label  "ERM00000498" ;
         rdfs:subClassOf  enm:ENM_8000245 .
 
@@ -133,6 +146,9 @@ erm:ERM00000093  rdfs:label  "ERM00000093" ;
 
 erm:ERM00000065  rdfs:label  "ERM00000065" ;
         rdfs:subClassOf  npo:NPO_1542 .
+
+erm:ERM00000508  rdfs:label  "ERM00000508" ;
+        rdfs:subClassOf  obo:CHEBI_48730 .
 
 erm:ERM00000492  rdfs:label  "ERM00000492" ;
         rdfs:subClassOf  npo:NPO_1373 .
